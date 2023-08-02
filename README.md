@@ -6,6 +6,12 @@ In a broad view, it walks across the terrain, region by region, baking navmeshes
 
 Unfortunately, it is slow, and crashes a lot.
 
+
+## How to install
+
+Add these files to `addons/nav_baker` and enable the plugin. Requires Terrain3D. 
+
+
 ## How to use
 1. Add a ChunkBaker node to the scene, and put everything you want baked underneath it like a regular navigation region.
 2. Assign a folder for it to save the bundle into, point it at the terrain 3D, and then add a navigation mesh resource. This will be duplicated during the baking process, and so all meshes will use the settings here.
