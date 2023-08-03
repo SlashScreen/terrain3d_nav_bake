@@ -7,8 +7,11 @@ extends Node
 
 
 func unpack() -> void:
+	var i = 0
+	
 	for nm in bundle.meshes:
 		var region = NavigationRegion3D.new()
 		region.navigation_mesh = nm
-		region.owner = get_tree().edited_scene_root
 		add_child(region)
+		region.name = "%s" % i
+		region.owner = get_tree().edited_scene_root
